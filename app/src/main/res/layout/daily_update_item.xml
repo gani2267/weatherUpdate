@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/daily_update_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/daily_text"
+        android:text = "Today"
+        android:textSize="15dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/daily_icon"
+        android:layout_width="30dp"
+        android:layout_toRightOf="@+id/daily_text"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/daily_status"
+        android:text="status"
+        android:textSize="15dp"
+        android:layout_toLeftOf="@id/daily_min_max"
+        android:layout_toRightOf="@+id/daily_icon"
+        android:layout_marginRight="10dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/daily_min_max"
+        android:text="min/max"
+        android:textSize="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="0dp"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

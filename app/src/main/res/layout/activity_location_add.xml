@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/add_location_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".location_add"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/enter_city"
+            android:text="Enter city Name "
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_loc"
+            android:layout_width="300dp"
+            android:layout_weight="5"
+            android:hint="eg. Mumbai"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Add"
+            android:id="@+id/btn_add_loc"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/city_list_item"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"/>
+
+</LinearLayout>
